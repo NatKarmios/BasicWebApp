@@ -29,7 +29,7 @@ public class WebServer {
   static class Website extends HttpServlet {
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException { e
       String query = req.getParameter("q");
       if (query == null) {
         new IndexPage().writeTo(resp);
